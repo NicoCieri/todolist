@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useCallback } from 'react';
 import { DispatchContext } from '../../context/todos.context';
 import useInputState from '../../hooks/useInputState';
 import { EDIT_TODO } from '../../constants/actions';
+import Field from '../Field';
 import Button from '../Button';
 import './EditTodoForm.scss';
 
@@ -34,13 +35,12 @@ function EditTodoForm({ id, task, toggleEditForm }) {
   return (
     <>
       <form className="editTodoForm" onSubmit={handleSubmit}>
-        <input
+        <Field
           autoFocus
           className="field"
           value={value}
           onChange={handleChange}
           onClick={e => {
-            console.log('input click');
             e.stopPropagation();
           }}
         />

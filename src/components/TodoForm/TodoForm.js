@@ -3,6 +3,7 @@ import { DispatchContext } from '../../context/todos.context';
 import useInputState from '../../hooks/useInputState';
 import { ADD_TODO } from '../../constants/actions';
 import Button from '../Button';
+import Field from '../Field';
 import './TodoForm.scss';
 
 function TodoForm() {
@@ -18,11 +19,10 @@ function TodoForm() {
 
   return (
     <form onSubmit={handleSubmit} className="todoForm">
-      <input
+      <Field
         placeholder="Add a new task"
         value={value}
         onChange={handleChange}
-        className="field"
       />
       <Button text="Ok" lighter />
     </form>
