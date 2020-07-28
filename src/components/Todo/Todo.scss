@@ -1,0 +1,58 @@
+.todo {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0px 0px 10px #999;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: 0px 0px 15px #999;
+    transform: scale(1.01);
+  }
+
+  &.completed {
+    text-decoration: line-through;
+    color: #999;
+    background-color: #eee;
+  }
+
+  &.isEditing {
+    background: #01bbd4;
+  }
+
+  &-text {
+    font-size: 1rem;
+  }
+
+  &-actions {
+    display: flex;
+  }
+
+  &-action {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #fff;
+    color: #666;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #eee;
+      box-shadow: 0px 4px 6px #ccc;
+      transform: scale(1.1);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0px 3px #ccc;
+    }
+  }
+}

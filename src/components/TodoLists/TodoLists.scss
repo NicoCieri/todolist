@@ -1,0 +1,18 @@
+.todoLists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .todoLists {
+    .column {
+      width: 100%;
+    }
+  }
+}

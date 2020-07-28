@@ -1,0 +1,18 @@
+.todoForm {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  background: #0082d2;
+  box-shadow: 0 0 0px #999;
+
+  .field {
+    width: 300px;
+    height: 3rem;
+    margin-right: 1rem;
+    background: #fff;
+    border: 2px solid #ddd;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+}

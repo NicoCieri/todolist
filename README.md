@@ -1,3 +1,7 @@
+# To Do List App
+
+The purpose of this project is to take a look at how a hooks and context architecture works, instead of using Redux. I will be adding Typescript, testing, prop types check and more stuff.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
